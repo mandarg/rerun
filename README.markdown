@@ -29,7 +29,7 @@ That's where `rerun` comes in:
 Installation
 ------------
 
-    curl 'http://bitbucket.org/sjl/src/tip/rerun' > /usr/local/bin/rerun
+    curl 'https://raw.githubusercontent.com/mandarg/rerun/master/rerun' > /usr/local/bin/rerun
     chmod a+x /usr/local/bin/rerun
 
 Usage
@@ -96,7 +96,8 @@ Use /quit or `Ctrl-D` to exit.
 Other Information
 -----------------
 
-* Source (Mercurial): <http://bitbucket.org/sjl/rerun/>
-* Source (Git): <http://github.com/sjl/rerun/>
+* Written by [@sjl](https://github.com/sjl), currently maintained by [@mandarg](https://github.com/mandarg)
+* Source (Mercurial): <https://bitbucket.org/mandarg/rerun/>
+* Source (Git): <http://github.com/mandarg/rerun/>
 * License: MIT/X11
-* Issues: <http://github.com/sjl/rerun/issues/>
+* Issues: <http://github.com/mandarg/rerun/issues/>
