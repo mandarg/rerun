@@ -55,12 +55,19 @@ def halp():
     print "(/d)elete [key]"
     print "(/h)elp"
     print "(/q)uit"
+    print "(/r)run all commands in order shown"
 
 
 def _print_list():
     print
     for cmd in sorted(commands.items()):
         print '[%s] %s' % cmd
+
+
+def runall():
+    for key in sorted(commands.keys()):
+        run(key)
+
 
 def loop():
     _print_list()
@@ -76,6 +83,8 @@ def loop():
         halp()
     elif choice.startswith('/q'):
         return False
+    elif choice.startswith('/r'):
+        runall()
     elif not choice.strip():
         pass
     elif choice in commands.keys():
