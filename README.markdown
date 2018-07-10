@@ -39,18 +39,19 @@ When you run `rerun` you're greeted with a prompt like this:
 
     >
 
-Type /help (or just /h) to get a list of commands:
+Type `/help` (or just `/h`) to get a list of commands:
 
     > /help
     (/a)dd [command]
     (/d)elete [key]
     (/h)elp
     (/q)uit
+    (/r)run all commands in order shown
 
     > 
 
-Add commands to the list with /add.  You can specify the command right in the
-/add command or let `rerun` prompt you for it:
+Add commands to the list with `/add`.  You can specify the command right in the
+`/add` command or let `rerun` prompt you for it:
 
     > /add ls
 
@@ -79,7 +80,7 @@ displayed next to their name:
     [b] pwd
     > 
 
-If you don't need a command any more you can /delete it:
+If you don't need a command any more you can `/delete` it:
 
     [a] ls
     [b] pwd
@@ -91,7 +92,16 @@ If you don't need a command any more you can /delete it:
 
     > 
 
-Use /quit or `Ctrl-D` to exit.
+You can also run all commands currently in the queue with a `/run` or `/r`:
+
+    > /run
+	/home/mandar/sandbox/rerun
+	LICENSE.markdown	README.markdown		rerun
+
+	[a] pwd
+	[b] ls
+
+Use `/quit` or `Ctrl-D` to exit.
 
 Other Information
 -----------------
